@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"> 
+            <h1>Question 1 :</h1>
+            
+            <input type="text" class="form-control" [(ngModel)]="UserName">
+            <p class="p-2">User Name: {{ UserName }}</p>
+            <button class="btn btn-primary" [disabled]="!UserName" (click)="UserName = ''">Clear UserName</button>
+        </div>
+    </div>
+</div>

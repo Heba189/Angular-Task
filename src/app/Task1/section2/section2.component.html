@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row p-2">
+        <div class="col-md-12">
+            <h1 class="p-2">Question 2 : </h1>
+            <button (click)="toggleDetails() " class="p-2 btn btn-primary">Display Details</button>
+            <p class="p-2" *ngIf="showSecret"> Secret Password = tuna </p>
+
+            <ul>
+   
+                @for (item of setDetails; track item; let idx = $index, e = $even) {
+                      <li [ngStyle]="idx>=5 ? giveStyle : null" [ngClass]="idx>=5 ? giveClasses : null">Item #{{ idx }}: {{ item }}</li> 
+                    }
+            </ul>
+        </div>
+    </div>
+</div>
