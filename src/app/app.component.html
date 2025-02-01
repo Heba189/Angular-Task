@@ -1,3 +1,11 @@
-<app-section1></app-section1>
+ <!-- <app-section1></app-section1>
 
-<app-section2></app-section2>
+<app-section2></app-section2>  -->
+
+
+<app-add-product (ProductAdded)="onProductAdded($event)"></app-add-product>
+
+
+@for(item of products ;track item;){
+    <app-products [Product]="item"></app-products>
+}
